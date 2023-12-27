@@ -1,0 +1,11 @@
+module Messages
+  module Events
+    # This event represents something
+    class SomeEvent
+      include Messaging::Message
+
+      # Some attribute documentation
+      attribute :some_attribute, String
+    end
+  end
+end

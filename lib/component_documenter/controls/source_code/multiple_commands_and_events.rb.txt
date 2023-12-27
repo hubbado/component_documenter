@@ -1,0 +1,39 @@
+module Messages
+  module Commands
+    # This command does something
+    class SomeCommand
+      include Messaging::Message
+
+      # Some attribute documentation
+      attribute :some_attribute, String
+    end
+    
+    # This command does something else
+    class SomeOtherCommand
+      include Messaging::Message
+
+      # Some other attribute documentation
+      attribute :some_other_attribute, Integer
+    end
+  end
+end
+
+module Messages
+  module Events
+    # This event represents something
+    class SomeEvent
+      include Messaging::Message
+
+      # Some attribute documentation
+      attribute :some_attribute, String
+    end
+
+    # This event represents something else
+    class SomeOtherEvent
+      include Messaging::Message
+
+      # Some other attribute documentation
+      attribute :some_other_attribute, Integer
+    end
+  end
+end

@@ -1,0 +1,51 @@
+inherit_gem:
+  hubbado-style:
+    - default.yml
+
+AllCops:
+  TargetRubyVersion: 3.0.2
+
+# We know mathematical precedence so this is unncessary
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: false
+
+# Constants have to be created and assigned in RSpec blocks
+Lint/ConstantDefinitionInBlock:
+  Exclude:
+    - "spec/**/*"
+
+# All spec files are basically one giant module
+# Sometimes we include the spec in a module, as RSpec doesn't support include properly
+Metrics/ModuleLength:
+  Exclude:
+    - "spec/**/*"
+
+# We will use our own judgement here
+Metrics/ParameterLists:
+  Enabled: false
+
+# We will use our own judgement here
+Naming/VariableNumber:
+  Enabled: false
+
+# This gets it wrong when we want to divide money by money as floats
+Style/FloatDivision:
+  Enabled: false
+
+# Unnecessary {} when this is enabled
+Style/HashAsLastArrayItem:
+  Enabled: false
+
+# We will use our own judgement here
+Style/Alias:
+  Enabled: false
+
+# Gets confused with %{first} in YAML strings in tests
+Style/FormatStringToken:
+  Exclude:
+    - "spec/**/*"
+
+# $redis is defined by the Redis gem
+Style/GlobalVars:
+  AllowedVariables:
+    - $redis
