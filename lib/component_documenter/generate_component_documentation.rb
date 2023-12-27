@@ -3,7 +3,7 @@ module ComponentDocumenter
     def self.call
       YARD.parse('lib/**/*.rb')
 
-      Generate.()
+      puts Generate.()
     end
   end
 end
