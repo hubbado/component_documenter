@@ -5,7 +5,7 @@ module ComponentDocumenter
 
     process do
       name = statement.parameters[0].jump(:tstring_content, :ident).source
-      type = statement.parameters[1].source
+      type = statement.parameters[1].source if statement.parameters[1]
 
       push_state(:scope => :class) do
         object = YARD::CodeObjects::MethodObject.new(namespace, name)
