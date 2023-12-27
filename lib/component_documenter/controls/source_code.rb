@@ -41,6 +41,16 @@ module ComponentDocumenter
         end
       end
 
+      module MissingComments
+        def self.source
+          SourceCode.read('missing_comments.rb.txt')
+        end
+
+        def self.documentation
+          SourceCode.read('missing_comments.md')
+        end
+      end
+
       def self.read(file)
         File.read("lib/component_documenter/controls/source_code/#{file}")
       end

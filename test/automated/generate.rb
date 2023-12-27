@@ -36,4 +36,13 @@ context 'Generate' do
       assert Generate.() == Controls::SourceCode::SingleCommand.documentation
     end
   end
+
+  context "With missing comments" do
+    YARD::Registry.clear
+    YARD.parse_string(Controls::SourceCode::MissingComments.source)
+
+    test "It generates markdown without additional blank lines" do
+      assert Generate.() == Controls::SourceCode::MissingComments.documentation
+    end
+  end
 end

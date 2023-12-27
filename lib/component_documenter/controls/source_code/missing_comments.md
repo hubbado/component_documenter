@@ -8,12 +8,10 @@
 
 ### SomeCommand
 
-This command does something
-
 <table>
 <tr>
   <td>some_attribute</td>
   <td>String</td>
-  <td>Some attribute documentation</td>
+  <td></td>
 </tr>
 </table>

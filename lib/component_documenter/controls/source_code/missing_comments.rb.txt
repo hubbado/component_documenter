@@ -1,0 +1,9 @@
+module Messages
+  module Commands
+    class SomeCommand
+      include Messaging::Message
+
+      attribute :some_attribute, String
+    end
+  end
+end
