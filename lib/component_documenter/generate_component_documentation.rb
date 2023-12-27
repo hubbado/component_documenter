@@ -1,7 +1,9 @@
 module ComponentDocumenter
   class GenerateComponentDocumentation
-    def self.call
-      YARD.parse('lib/**/*.rb')
+    def self.call(glob = nil)
+      glob ||= 'lib/**/*.rb'
+
+      YARD.parse(glob)
 
       puts Generate.()
     end

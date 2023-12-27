@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+bin/generate_component_documentation 'lib/component_documenter/controls/source_code/multiple_commands_and_events.rb.txt'

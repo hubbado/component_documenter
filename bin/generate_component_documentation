@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
 require_relative "../init"
-ComponentDocumenter::GenerateComponentDocumentation.()
+ComponentDocumenter::GenerateComponentDocumentation.(ARGV[0])
