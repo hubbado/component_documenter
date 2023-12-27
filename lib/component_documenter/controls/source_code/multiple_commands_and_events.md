@@ -10,7 +10,7 @@
 * [SomeEvent](#someevent)
 * [SomeOtherEvent](#someotherevent)
 
-## Commands Schemas
+## Command Schemas
 
 ### SomeCommand
 
@@ -36,7 +36,7 @@ This command does something else
 </tr>
 </table>
 
-## Events Schemas
+## Event Schemas
 
 ### SomeEvent
 

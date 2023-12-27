@@ -4,7 +4,7 @@
 
 * [SomeCommand](#somecommand)
 
-## Commands Schemas
+## Command Schemas
 
 ### SomeCommand
 

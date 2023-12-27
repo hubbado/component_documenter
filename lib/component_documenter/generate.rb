@@ -12,8 +12,8 @@ module ComponentDocumenter
         "# Message schemas",
         (message_list(commands, "Commands") if commands.any?),
         (message_list(events, "Events") if events.any?),
-        (message_schemas(commands, "Commands") if commands.any?),
-        (message_schemas(events, "Events") if events.any?)
+        (message_schemas(commands, "Command") if commands.any?),
+        (message_schemas(events, "Event") if events.any?)
       ]
 
       output.compact.join("\n") + "\n"

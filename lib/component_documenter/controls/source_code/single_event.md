@@ -4,7 +4,7 @@
 
 * [SomeEvent](#someevent)
 
-## Events Schemas
+## Event Schemas
 
 ### SomeEvent
 
